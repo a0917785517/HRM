@@ -48,15 +48,15 @@ docker-compose up --build
 ### B. 後端 API 測試 (Swagger UI)  
 開啟 http://localhost:8000/docs，可直接測試以下 API：
 
-- GET /api/employees → 取得所有員工
+- `GET /api/employees` → 取得所有員工
 
-- POST /api/employees → 新增員工
+- `POST /api/employees` → 新增員工
 
-- PUT /api/employees/{id} → 更新員工
+- `PUT /api/employees/{id}` → 更新員工
 
-- DELETE /api/employees/{id} → 刪除員工
+- `DELETE /api/employees/{id}` → 刪除員工
 
-- POST /api/employees/upload-excel → 批次匯入 Excel
+- `POST /api/employees/upload-excel` → 批次匯入 Excel
 
 ### C. Excel 上傳格式
 請確保檔案有以下欄位：
@@ -65,6 +65,8 @@ docker-compose up --build
 | ------------ | ----- | --------------------------------------------- | -------- | ---------- | ---------- | ------ |
 | E001         | Alice | [alice@example.com](mailto:alice@example.com) | Engineer | R\&D       | 2023-01-15 | active |
 | E002         | Bob   | [bob@example.com](mailto:bob@example.com)     | HR       | HR         | 2022-11-03 | active |  
+
+**詳見 `example/sample_employees.xlsx`**
 
 ## ⚡ 常見問題 (FAQ)  
 ### Q1: 後端啟動報錯 `email-validator is not installed`
