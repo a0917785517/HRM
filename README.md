@@ -20,10 +20,16 @@ cd HRM
 ### 2. 啟動服務
 Linux / macOS
 ```
+＃　bash
+
+
 docker compose up --build
 ```
 Windows (PowerShell / CMD)
 ```
+＃　powershell
+
+
 docker-compose up --build
 ```
 
