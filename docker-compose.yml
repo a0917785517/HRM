@@ -1,0 +1,24 @@
+services:
+  backend:
+    build: ./backend
+    container_name: hrm-backend
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    networks:
+      - hrm-net
+
+  frontend:
+    build: ./frontend
+    container_name: hrm-frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+    networks:
+      - hrm-net
+
+networks:
+  hrm-net:
