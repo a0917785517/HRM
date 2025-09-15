@@ -4,3 +4,5 @@ sqlalchemy
 pydantic
 pandas    # 匯入 Excel 用
 openpyxl  # 讓 pandas 能讀 .xlsx
+email-validator
+python-multipart
